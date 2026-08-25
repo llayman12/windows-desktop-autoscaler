@@ -6,3 +6,4 @@ public sealed record DisplayTopology(IReadOnlyList<DisplayInfo> Displays, bool I
 
     public bool HasPhysicalExternal => Displays.Any(d => d.Classification == DisplayClassification.PhysicalExternal);
 }
+

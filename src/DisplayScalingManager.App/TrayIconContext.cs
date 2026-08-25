@@ -25,8 +25,8 @@ internal sealed class TrayIconContext : ApplicationContext
         _logger = logger;
 
         _statusItem = new ToolStripMenuItem("Mode: (evaluating…)") { Enabled = false };
-
         var menu = new ContextMenuStrip();
+
         menu.Items.Add(_statusItem);
         menu.Items.Add(new ToolStripSeparator());
         menu.Items.Add("Evaluate now", null, (_, _) => _ = EvaluateNowAsync());

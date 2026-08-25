@@ -1,7 +1,6 @@
 namespace DisplayScalingManager.Core.Configuration;
 
-public static class AppPaths
-{
+public static class AppPaths {
     public static string RootDirectory { get; } = Path.Combine(
         Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "DisplayScalingManager");
 

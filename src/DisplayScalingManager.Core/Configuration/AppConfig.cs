@@ -4,8 +4,7 @@ using Serilog;
 
 namespace DisplayScalingManager.Core.Configuration;
 
-public sealed class AppConfig
-{
+public sealed class AppConfig {
     [JsonPropertyName("PortablePercent")]
     public int PortablePercent { get; set; } = 100;
 

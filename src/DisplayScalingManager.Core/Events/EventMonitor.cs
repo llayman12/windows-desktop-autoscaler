@@ -8,6 +8,7 @@ namespace DisplayScalingManager.Core.Events;
 /// callback, coalescing bursts (e.g. a dock connect fires several DisplaySettingsChanged events).
 /// No polling is involved — the process is idle until Windows raises one of these events.
 /// </summary>
+
 public sealed class EventMonitor : IDisposable
 {
     private readonly ILogger _logger;

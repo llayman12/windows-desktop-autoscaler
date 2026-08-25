@@ -4,6 +4,7 @@ namespace DisplayScalingManager.Core.Events;
 /// Coalesces a burst of rapid calls into a single invocation of <paramref name="onFire"/>,
 /// firing only after <paramref name="dueTimeMilliseconds"/> of quiet since the last <see cref="Ping"/>.
 /// </summary>
+
 public sealed class DebounceTimer : IDisposable
 {
     private readonly Timer _timer;
@@ -18,4 +19,5 @@ public sealed class DebounceTimer : IDisposable
     public void Ping() => _timer.Change(_dueTimeMilliseconds, Timeout.Infinite);
 
     public void Dispose() => _timer.Dispose();
+
 }

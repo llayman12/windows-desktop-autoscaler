@@ -145,4 +145,5 @@ public sealed class DisplayTopologyDetector : IDisplayTopologyProvider
 
         return string.IsNullOrWhiteSpace(request.monitorFriendlyDeviceName) ? null : request.monitorFriendlyDeviceName;
     }
+    
 }

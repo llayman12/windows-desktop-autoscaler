@@ -20,5 +20,4 @@
     <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
     <InvariantGlobalization>true</InvariantGlobalization>
   </PropertyGroup>
-
 </Project>

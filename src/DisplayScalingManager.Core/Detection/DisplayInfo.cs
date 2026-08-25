@@ -11,3 +11,4 @@ public sealed record DisplayInfo(
     string? DeviceName,
     DisplayConfigVideoOutputTechnology Technology,
     DisplayClassification Classification);
+

@@ -113,6 +113,7 @@ internal struct DISPLAYCONFIG_DEVICE_INFO_HEADER
 }
 
 [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+
 internal struct DISPLAYCONFIG_TARGET_DEVICE_NAME
 {
     public DISPLAYCONFIG_DEVICE_INFO_HEADER header;
@@ -153,4 +154,5 @@ internal static class NativeMethods
 
     [DllImport("user32.dll")]
     internal static extern int DisplayConfigSetDeviceInfo(ref DISPLAYCONFIG_DEVICE_INFO_HEADER requestPacket);
+
 }

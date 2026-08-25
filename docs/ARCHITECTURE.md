@@ -1,5 +1,4 @@
 # Architecture Notes
-
 ## DPI scaling mechanism (living risk note)
 
 As of Windows 11 24H2 / .NET 8, there is no fully public, Microsoft-documented API to set the

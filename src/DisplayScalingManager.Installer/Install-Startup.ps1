@@ -30,7 +30,7 @@ $taskName = "DisplayScalingManager"
 $action = New-ScheduledTaskAction -Execute $ExePath
 $trigger = New-ScheduledTaskTrigger -AtLogOn -User $env:USERNAME
 $settings = New-ScheduledTaskSettingsSet `
-    -DisallowStartIfOnBatteries:$false `
+    -AllowStartIfOnBatteries `
     -MultipleInstances IgnoreNew `
     -StartWhenAvailable
 

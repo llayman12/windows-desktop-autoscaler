@@ -27,6 +27,11 @@ tests/
 docs/
 └── ARCHITECTURE.md
 ```
+## Setup
+1. Run Building commands
+2. Run Installation commands
+3. Good to go unless you want to uninstall... ):
+
 
 ## Building
 
